@@ -31,7 +31,7 @@
           </div>
         </div>
         <div class="hero-image">
-          <img src="https://via.placeholder.com/600x400?text=AI学习中心" alt="AI学习中心" />
+          <img src="@/assets/images/hero-image.svg" alt="AI学习中心" />
         </div>
       </div>
     </div>
