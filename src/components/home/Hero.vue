@@ -1,5 +1,9 @@
 <template>
   <section class="hero">
+    <div class="wechat-banner">
+      <i class="el-icon-chat-dot-round"></i>
+      微信号：<span class="wechat-id">zhzren123</span>
+    </div>
     <div class="container">
       <div class="hero-content">
         <div class="hero-text">
@@ -180,6 +184,28 @@ export default {
     display: block;
     width: 100%;
     height: 50px;
+  }
+}
+
+.wechat-banner {
+  background-color: #409EFF;
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+
+  .wechat-id {
+    font-weight: bold;
+    margin-left: 4px;
+  }
+
+  i {
+    margin-right: 8px;
   }
 }
 </style> 
