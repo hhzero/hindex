@@ -1,9 +1,5 @@
 <template>
   <section class="hero">
-    <div class="wechat-banner">
-      <i class="el-icon-chat-dot-round"></i>
-      微信号：<span class="wechat-id">zhzren123</span>
-    </div>
     <div class="container">
       <div class="hero-content">
         <div class="hero-text">
@@ -31,6 +27,10 @@
             <div class="stat-item">
               <span class="stat-number">50+</span>
               <span class="stat-text">实战项目</span>
+            </div>
+            <div class="stat-item wechat-item">
+              <span class="stat-number"><i class="el-icon-chat-dot-round"></i> zhzren123</span>
+              <span class="stat-text">微信号</span>
             </div>
           </div>
         </div>
@@ -148,11 +148,20 @@ export default {
       font-size: 1.8rem;
       font-weight: 700;
       color: #409EFF;
+      display: flex;
+      align-items: center;
+      gap: 4px;
     }
     
     .stat-text {
       font-size: 0.9rem;
       color: var(--regular-text-color);
+    }
+  }
+
+  .wechat-item {
+    .stat-number {
+      font-size: 1.5rem;
     }
   }
 }
@@ -184,28 +193,6 @@ export default {
     display: block;
     width: 100%;
     height: 50px;
-  }
-}
-
-.wechat-banner {
-  background-color: #409EFF;
-  color: white;
-  text-align: center;
-  padding: 8px 0;
-  font-size: 16px;
-  font-weight: 500;
-  position: relative;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-
-  .wechat-id {
-    font-weight: bold;
-    margin-left: 4px;
-  }
-
-  i {
-    margin-right: 8px;
   }
 }
 </style> 
